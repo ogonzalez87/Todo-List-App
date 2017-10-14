@@ -20,3 +20,10 @@ $("input[type='text']").keypress(function (event) {
         $("ul").append("<li><span> <i class='fa fa-trash'aria-hidden='true'></i> </span>" + todoText + "</li>");
     }
 });
+
+$(".fa-plus, .fa-minus").click(function () {
+    $("input[type='text']").fadeToggle();
+    $(this).toggleClass("fa-plus");
+    $(this).toggleClass("fa-minus");
+    e.preventDefault();
+});

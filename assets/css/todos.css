@@ -49,7 +49,8 @@ input {
     padding: 13px 20px 13px 20px;
     box-sizing: border-box;
     color: #2980b9;
-    border: 3px solid rgba( 0, 0, 0, 0)
+    border: 3px solid rgba( 0, 0, 0, 0);
+    display: none;
 }
 
 input:focus {
@@ -60,12 +61,10 @@ input:focus {
 
 body {
     font-family: Roboto;
-    background: #ffd89b;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #19547b, #ffd89b);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2BC0E4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 #container {
@@ -81,6 +80,7 @@ body {
     text-decoration: line-through;
 }
 
-.fa-plus {
+.fa-plus,
+.fa-minus {
     float: right;
 }
